@@ -1,0 +1,44 @@
+package _0614_;
+import java.util.Scanner;
+
+public class Calc {
+    public static void main(String[] args) {
+        // 두 수를 입력받아서
+        Scanner sc = new Scanner(System.in);
+        int num1, num2;
+
+        System.out.print("num1?");
+        num1 = sc.nextInt();
+        System.out.print("num2?");
+        num2 = sc.nextInt();
+       
+        // 사칙연산을 선택하게끔
+        System.out.print("+(1) -(2) *(3) /(4)");
+        int op = sc.nextInt();        
+        double result = 0;
+       
+        // 계산 결과를 출력
+        switch(op) {
+        case 1:
+            add(num1, num2);
+            break;
+        case 2:
+            result = num1-num2;
+            break;
+        case 3:
+            result = num1*num2;
+            break;
+        case 4:
+            // 더블 = 인트/인트
+            result = (double)num1/num2;
+            break;
+        default:
+            System.out.print("응 다시해~");        
+        }
+        System.out.println("결과: "+result);
+    }
+    // add(num1, num2)
+   
+    void add(int a, int b) {
+        result = num1+num2;
+    }
